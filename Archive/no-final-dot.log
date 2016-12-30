@@ -1,0 +1,84 @@
+   1: program NoFinalDot; 
+Parser:   <Program>
+   2: var x : boolean; 
+Parser:     <block>
+Parser:       <VarDeclPart>
+Parser:         <VarDecl>
+Parser:           <type>
+Parser:             <TypeName>
+   3: begin 
+Parser:             </TypeName>
+Parser:           </type>
+   4: x := true; 
+Parser:         </VarDecl>
+Parser:       </VarDeclPart>
+Parser:       <StatmList>
+Parser:         <Statement>
+Parser:           <assign-statm>
+Parser:             <variable>
+Parser:             </variable>
+Parser:             <expression>
+Parser:               <SimpleExpr>
+Parser:                 <Term>
+Parser:                   <factor>
+Parser:                     <variable>
+   5: write('x', '=', x, eol) 
+Parser:                     </variable>
+Parser:                   </factor>
+Parser:                 </Term>
+Parser:               </SimpleExpr>
+Parser:             </expression>
+Parser:           </assign-statm>
+Parser:         </Statement>
+Parser:         <Statement>
+Parser:           <ProcCallStatm>
+Parser:             <expression>
+Parser:               <SimpleExpr>
+Parser:                 <Term>
+Parser:                   <factor>
+Parser:                     <Unsigned Constant>
+Parser:                       <char literal>
+Parser:                       </char literal>
+Parser:                     </Unsigned Constant>
+Parser:                   </factor>
+Parser:                 </Term>
+Parser:               </SimpleExpr>
+Parser:             </expression>
+Parser:             <expression>
+Parser:               <SimpleExpr>
+Parser:                 <Term>
+Parser:                   <factor>
+Parser:                     <Unsigned Constant>
+Parser:                       <char literal>
+Parser:                       </char literal>
+Parser:                     </Unsigned Constant>
+Parser:                   </factor>
+Parser:                 </Term>
+Parser:               </SimpleExpr>
+Parser:             </expression>
+Parser:             <expression>
+Parser:               <SimpleExpr>
+Parser:                 <Term>
+Parser:                   <factor>
+Parser:                     <variable>
+Parser:                     </variable>
+Parser:                   </factor>
+Parser:                 </Term>
+Parser:               </SimpleExpr>
+Parser:             </expression>
+Parser:             <expression>
+Parser:               <SimpleExpr>
+Parser:                 <Term>
+Parser:                   <factor>
+Parser:                     <variable>
+   6: end 
+Parser:                     </variable>
+Parser:                   </factor>
+Parser:                 </Term>
+Parser:               </SimpleExpr>
+Parser:             </expression>
+Parser:           </ProcCallStatm>
+Parser:         </Statement>
+Parser:       </StatmList>
+Parser:     </block>
+Error in last line: Expected a . but found a e-o-f!

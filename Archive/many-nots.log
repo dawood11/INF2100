@@ -1,0 +1,142 @@
+   1: /* Dette programmet er faktisk lovlig! */ 
+   2:  
+   3: program ManyNots; 
+Parser:   <Program>
+   4: var b: boolean; 
+Parser:     <block>
+Parser:       <VarDeclPart>
+Parser:         <VarDecl>
+Parser:           <type>
+Parser:             <TypeName>
+   5: begin 
+Parser:             </TypeName>
+Parser:           </type>
+   6: b := not not True or not not not True and not not not not True; 
+Parser:         </VarDecl>
+Parser:       </VarDeclPart>
+Parser:       <StatmList>
+Parser:         <Statement>
+Parser:           <assign-statm>
+Parser:             <variable>
+Parser:             </variable>
+Parser:             <expression>
+Parser:               <SimpleExpr>
+Parser:                 <Term>
+Parser:                   <factor>
+Parser:                     <negation>
+Parser:                       <factor>
+Parser:                         <negation>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </negation>
+Parser:                       </factor>
+Parser:                     </negation>
+Parser:                   </factor>
+Parser:                 </Term>
+Parser:                 <TermOperator>
+Parser:                 </TermOperator>
+Parser:                 <Term>
+Parser:                   <factor>
+Parser:                     <negation>
+Parser:                       <factor>
+Parser:                         <negation>
+Parser:                           <factor>
+Parser:                             <negation>
+Parser:                               <factor>
+Parser:                                 <variable>
+Parser:                                 </variable>
+Parser:                               </factor>
+Parser:                             </negation>
+Parser:                           </factor>
+Parser:                         </negation>
+Parser:                       </factor>
+Parser:                     </negation>
+Parser:                   </factor>
+Parser:                   <factor opr>
+Parser:                   </factor opr>
+Parser:                   <factor>
+Parser:                     <negation>
+Parser:                       <factor>
+Parser:                         <negation>
+Parser:                           <factor>
+Parser:                             <negation>
+Parser:                               <factor>
+Parser:                                 <negation>
+Parser:                                   <factor>
+Parser:                                     <variable>
+   7: write('b', '=', b, EoL) 
+Parser:                                     </variable>
+Parser:                                   </factor>
+Parser:                                 </negation>
+Parser:                               </factor>
+Parser:                             </negation>
+Parser:                           </factor>
+Parser:                         </negation>
+Parser:                       </factor>
+Parser:                     </negation>
+Parser:                   </factor>
+Parser:                 </Term>
+Parser:               </SimpleExpr>
+Parser:             </expression>
+Parser:           </assign-statm>
+Parser:         </Statement>
+Parser:         <Statement>
+Parser:           <ProcCallStatm>
+Parser:             <expression>
+Parser:               <SimpleExpr>
+Parser:                 <Term>
+Parser:                   <factor>
+Parser:                     <Unsigned Constant>
+Parser:                       <char literal>
+Parser:                       </char literal>
+Parser:                     </Unsigned Constant>
+Parser:                   </factor>
+Parser:                 </Term>
+Parser:               </SimpleExpr>
+Parser:             </expression>
+Parser:             <expression>
+Parser:               <SimpleExpr>
+Parser:                 <Term>
+Parser:                   <factor>
+Parser:                     <Unsigned Constant>
+Parser:                       <char literal>
+Parser:                       </char literal>
+Parser:                     </Unsigned Constant>
+Parser:                   </factor>
+Parser:                 </Term>
+Parser:               </SimpleExpr>
+Parser:             </expression>
+Parser:             <expression>
+Parser:               <SimpleExpr>
+Parser:                 <Term>
+Parser:                   <factor>
+Parser:                     <variable>
+Parser:                     </variable>
+Parser:                   </factor>
+Parser:                 </Term>
+Parser:               </SimpleExpr>
+Parser:             </expression>
+Parser:             <expression>
+Parser:               <SimpleExpr>
+Parser:                 <Term>
+Parser:                   <factor>
+Parser:                     <variable>
+   8: end. 
+Parser:                     </variable>
+Parser:                   </factor>
+Parser:                 </Term>
+Parser:               </SimpleExpr>
+Parser:             </expression>
+Parser:           </ProcCallStatm>
+Parser:         </Statement>
+Parser:       </StatmList>
+Parser:     </block>
+Parser:   </Program>
+program manynots;
+var b : boolean;
+
+begin
+  b := not not trueornot not not true and not not not not true;
+  write('b', '=', b, eol)end.

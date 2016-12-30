@@ -1,0 +1,4 @@
+Binding on line 2: char was declared as <type decl> on line -1
+Binding on line 4: c was declared as <VarDecl> on line 2
+Type check := on line 4: type Char vs type Integer
+Error at line 4: Different types in AssignStatm

@@ -1,0 +1,32 @@
+Binding on line 8: integer was declared as <type decl> on line -1
+Binding on line 10: integer was declared as <type decl> on line -1
+Binding on line 10: integer was declared as <type decl> on line -1
+Binding on line 10: integer was declared as <type decl> on line -1
+Binding on line 12: n was declared as <param decl> on line 10
+Type check = operands on line 12: type Integer vs type Integer
+Type check if-test on line 12: type Boolean vs type Boolean
+Binding on line 13: gcd was declared as <func decl> on line 10
+Binding on line 13: m was declared as <param decl> on line 10
+Type check := on line 13: type Integer vs type Integer
+Binding on line 15: gcd was declared as <func decl> on line 10
+Binding on line 15: gcd was declared as <func decl> on line 10
+Binding on line 15: n was declared as <param decl> on line 10
+Type check Param #1 on line 15: type Integer vs type Integer
+Binding on line 15: m was declared as <param decl> on line 10
+Binding on line 15: n was declared as <param decl> on line 10
+Type check Term-test on line 15: type Integer vs type Integer
+Type check Term-integer-test on line 15: type Integer vs type Integer
+Type check Param #2 on line 15: type Integer vs type Integer
+Type check := on line 15: type Integer vs type Integer
+Binding on line 19: res was declared as <VarDecl> on line 8
+Binding on line 19: gcd was declared as <func decl> on line 10
+Binding on line 19: v1 was declared as <const decl> on line 6
+Type check Param #1 on line 19: type Integer vs type Integer
+Binding on line 19: v2 was declared as <const decl> on line 6
+Type check Param #2 on line 19: type Integer vs type Integer
+Type check := on line 19: type Integer vs type Integer
+Binding on line 20: write was declared as <ProcDecl> on line -1
+Binding on line 20: v1 was declared as <const decl> on line 6
+Binding on line 20: v2 was declared as <const decl> on line 6
+Binding on line 20: res was declared as <VarDecl> on line 8
+Binding on line 20: eol was declared as <const decl> on line -1

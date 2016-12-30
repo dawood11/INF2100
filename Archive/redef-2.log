@@ -1,0 +1,26 @@
+Binding on line 9: integer was declared as <type decl> on line -1
+Binding on line 11: integer was declared as <type decl> on line -1
+Binding on line 13: write was declared as <ProcDecl> on line -1
+Binding on line 13: x was declared as <param decl> on line 11
+Binding on line 16: char was declared as <type decl> on line -1
+Binding on line 18: write was declared as <ProcDecl> on line -1
+Binding on line 18: x was declared as <param decl> on line 16
+Binding on line 21: char was declared as <type decl> on line -1
+Binding on line 21: integer was declared as <type decl> on line -1
+Binding on line 23: writechar was declared as <ProcDecl> on line 16
+Binding on line 23: c was declared as <param decl> on line 21
+Type check Param #1 on line 23: type Char vs type Char
+Binding on line 23: writechar was declared as <ProcDecl> on line 16
+Type check Param #1 on line 23: type Char vs type Char
+Binding on line 23: writeint was declared as <ProcDecl> on line 11
+Binding on line 23: v was declared as <param decl> on line 21
+Type check Param #1 on line 23: type Integer vs type Integer
+Binding on line 23: writechar was declared as <ProcDecl> on line 16
+Binding on line 23: eol was declared as <const decl> on line -1
+Type check Param #1 on line 23: type Char vs type Char
+Binding on line 27: x was declared as <VarDecl> on line 9
+Type check := on line 27: type Integer vs type Integer
+Binding on line 28: write was declared as <ProcDecl> on line 21
+Type check Param #1 on line 28: type Char vs type Char
+Binding on line 28: x was declared as <VarDecl> on line 9
+Type check Param #2 on line 28: type Integer vs type Integer

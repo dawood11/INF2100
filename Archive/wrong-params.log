@@ -1,0 +1,9 @@
+   1: program WrongParams; 
+Parser:   <Program>
+   2:  
+   3: function equalInt (a, b :integer): boolean; 
+Parser:     <block>
+Parser:       <func decl>
+Parser:         <param decl list>
+Parser:           <param decl>
+Error in line 3: Expected a : but found a ,!

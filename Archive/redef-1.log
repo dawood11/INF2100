@@ -1,0 +1,12 @@
+Binding on line 8: integer was declared as <type decl> on line -1
+Binding on line 10: integer was declared as <type decl> on line -1
+Binding on line 12: write was declared as <ProcDecl> on line -1
+Binding on line 12: char was declared as <VarDecl> on line 8
+Binding on line 12: eol was declared as <param decl> on line 10
+Binding on line 16: char was declared as <VarDecl> on line 8
+Type check := on line 16: type Integer vs type Integer
+Binding on line 17: boolean was declared as <ProcDecl> on line 10
+Type check SimpleExpr-preopr-test on line 17: type Integer vs type Integer
+Type check Param #1 on line 17: type Integer vs type Integer
+Binding on line 18: write was declared as <ProcDecl> on line -1
+Binding on line 18: eol was declared as <const decl> on line -1

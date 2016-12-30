@@ -1,0 +1,110 @@
+Binding on line 9: limit was declared as <const decl> on line 7
+Binding on line 9: boolean was declared as <type decl> on line -1
+Type check array limits on line 9: type Integer vs type Integer
+Binding on line 10: integer was declared as <type decl> on line -1
+Binding on line 13: integer was declared as <type decl> on line -1
+Binding on line 14: integer was declared as <type decl> on line -1
+Binding on line 16: i1 was declared as <VarDecl> on line 13
+Type check := on line 16: type Integer vs type Integer
+Binding on line 17: i1 was declared as <VarDecl> on line 13
+Binding on line 17: limit was declared as <const decl> on line 7
+Type check <= operands on line 17: type Integer vs type Integer
+Type check while-test on line 17: type Boolean vs type Boolean
+Binding on line 19: i2 was declared as <VarDecl> on line 14
+Binding on line 19: i1 was declared as <VarDecl> on line 13
+Type check Term-test on line 19: type Integer vs type Integer
+Type check Term-integer-test on line 19: type Integer vs type Integer
+Type check := on line 19: type Integer vs type Integer
+Binding on line 20: i2 was declared as <VarDecl> on line 14
+Binding on line 20: limit was declared as <const decl> on line 7
+Type check <= operands on line 20: type Integer vs type Integer
+Type check while-test on line 20: type Boolean vs type Boolean
+Binding on line 22: prime was declared as <VarDecl> on line 9
+Binding on line 22: i2 was declared as <VarDecl> on line 14
+Type check array index on line 22: type Integer vs type Integer
+Binding on line 22: false was declared as <const decl> on line -1
+Type check := on line 22: type Boolean vs type Boolean
+Binding on line 23: i2 was declared as <VarDecl> on line 14
+Binding on line 23: i2 was declared as <VarDecl> on line 14
+Binding on line 23: i1 was declared as <VarDecl> on line 13
+Type check SimpleExpr-integer-test on line 23: type Integer vs type Integer
+Type check SimpleExpr-integer-test on line 23: type Integer vs type Integer
+Type check := on line 23: type Integer vs type Integer
+Binding on line 25: i1 was declared as <VarDecl> on line 13
+Binding on line 25: i1 was declared as <VarDecl> on line 13
+Type check SimpleExpr-integer-test on line 25: type Integer vs type Integer
+Type check SimpleExpr-integer-test on line 25: type Integer vs type Integer
+Type check := on line 25: type Integer vs type Integer
+Binding on line 29: integer was declared as <type decl> on line -1
+Binding on line 31: x was declared as <param decl> on line 29
+Type check < operands on line 31: type Integer vs type Integer
+Type check if-test on line 31: type Boolean vs type Boolean
+Binding on line 31: write was declared as <ProcDecl> on line -1
+Binding on line 32: x was declared as <param decl> on line 29
+Type check < operands on line 32: type Integer vs type Integer
+Type check if-test on line 32: type Boolean vs type Boolean
+Binding on line 32: write was declared as <ProcDecl> on line -1
+Binding on line 33: x was declared as <param decl> on line 29
+Type check < operands on line 33: type Integer vs type Integer
+Type check if-test on line 33: type Boolean vs type Boolean
+Binding on line 33: write was declared as <ProcDecl> on line -1
+Binding on line 34: write was declared as <ProcDecl> on line -1
+Binding on line 34: x was declared as <param decl> on line 29
+Binding on line 38: integer was declared as <type decl> on line -1
+Binding on line 39: integer was declared as <type decl> on line -1
+Binding on line 41: i was declared as <VarDecl> on line 38
+Type check := on line 41: type Integer vs type Integer
+Binding on line 41: nprinted was declared as <VarDecl> on line 39
+Type check := on line 41: type Integer vs type Integer
+Binding on line 42: i was declared as <VarDecl> on line 38
+Binding on line 42: limit was declared as <const decl> on line 7
+Type check <= operands on line 42: type Integer vs type Integer
+Type check while-test on line 42: type Boolean vs type Boolean
+Binding on line 44: prime was declared as <VarDecl> on line 9
+Binding on line 44: i was declared as <VarDecl> on line 38
+Type check array index on line 44: type Integer vs type Integer
+Type check if-test on line 44: type Boolean vs type Boolean
+Binding on line 46: nprinted was declared as <VarDecl> on line 39
+Type check > operands on line 46: type Integer vs type Integer
+Binding on line 46: nprinted was declared as <VarDecl> on line 39
+Type check Term-test on line 46: type Integer vs type Integer
+Type check Term-integer-test on line 46: type Integer vs type Integer
+Type check = operands on line 46: type Integer vs type Integer
+Type check Term-test on line 46: type Boolean vs type Boolean
+Type check Term-and-test on line 46: type Boolean vs type Boolean
+Type check if-test on line 46: type Boolean vs type Boolean
+Binding on line 46: write was declared as <ProcDecl> on line -1
+Binding on line 46: eol was declared as <const decl> on line -1
+Binding on line 47: p4 was declared as <ProcDecl> on line 29
+Binding on line 47: i was declared as <VarDecl> on line 38
+Type check Param #1 on line 47: type Integer vs type Integer
+Binding on line 47: nprinted was declared as <VarDecl> on line 39
+Binding on line 47: nprinted was declared as <VarDecl> on line 39
+Type check SimpleExpr-integer-test on line 47: type Integer vs type Integer
+Type check SimpleExpr-integer-test on line 47: type Integer vs type Integer
+Type check := on line 47: type Integer vs type Integer
+Binding on line 49: i was declared as <VarDecl> on line 38
+Binding on line 49: i was declared as <VarDecl> on line 38
+Type check SimpleExpr-integer-test on line 49: type Integer vs type Integer
+Type check SimpleExpr-integer-test on line 49: type Integer vs type Integer
+Type check := on line 49: type Integer vs type Integer
+Binding on line 51: write was declared as <ProcDecl> on line -1
+Binding on line 51: eol was declared as <const decl> on line -1
+Binding on line 55: i was declared as <VarDecl> on line 10
+Type check := on line 55: type Integer vs type Integer
+Binding on line 56: i was declared as <VarDecl> on line 10
+Binding on line 56: limit was declared as <const decl> on line 7
+Type check <= operands on line 56: type Integer vs type Integer
+Type check while-test on line 56: type Boolean vs type Boolean
+Binding on line 56: prime was declared as <VarDecl> on line 9
+Binding on line 56: i was declared as <VarDecl> on line 10
+Type check array index on line 56: type Integer vs type Integer
+Binding on line 56: true was declared as <const decl> on line -1
+Type check := on line 56: type Boolean vs type Boolean
+Binding on line 56: i was declared as <VarDecl> on line 10
+Binding on line 56: i was declared as <VarDecl> on line 10
+Type check SimpleExpr-integer-test on line 56: type Integer vs type Integer
+Type check SimpleExpr-integer-test on line 56: type Integer vs type Integer
+Type check := on line 56: type Integer vs type Integer
+Binding on line 59: findprimes was declared as <ProcDecl> on line 12
+Binding on line 59: printprimes was declared as <ProcDecl> on line 37

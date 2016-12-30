@@ -1,0 +1,7 @@
+Binding on line 3: integer was declared as <type decl> on line -1
+Binding on line 5: write was declared as <ProcDecl> on line -1
+Binding on line 5: a was declared as <param decl> on line 3
+Binding on line 5: eol was declared as <const decl> on line -1
+Binding on line 9: p was declared as <ProcDecl> on line 3
+Type check Param #1 on line 9: type Char vs type Integer
+Error at line 9: Param #1 is not type Integer

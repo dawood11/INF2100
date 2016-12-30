@@ -1,0 +1,52 @@
+   1: program DoubleMinus; 
+Parser:   <Program>
+   2: var x: integer;   y: integer; 
+Parser:     <block>
+Parser:       <VarDeclPart>
+Parser:         <VarDecl>
+Parser:           <type>
+Parser:             <TypeName>
+Parser:             </TypeName>
+Parser:           </type>
+Parser:         </VarDecl>
+Parser:         <VarDecl>
+Parser:           <type>
+Parser:             <TypeName>
+   3: begin 
+Parser:             </TypeName>
+Parser:           </type>
+   4: x := -2;  y := --x; 
+Parser:         </VarDecl>
+Parser:       </VarDeclPart>
+Parser:       <StatmList>
+Parser:         <Statement>
+Parser:           <assign-statm>
+Parser:             <variable>
+Parser:             </variable>
+Parser:             <expression>
+Parser:               <SimpleExpr>
+Parser:                 <prefix opr>
+Parser:                 </prefix opr>
+Parser:                 <Term>
+Parser:                   <factor>
+Parser:                     <Unsigned Constant>
+Parser:                       <number literal>
+Parser:                       </number literal>
+Parser:                     </Unsigned Constant>
+Parser:                   </factor>
+Parser:                 </Term>
+Parser:               </SimpleExpr>
+Parser:             </expression>
+Parser:           </assign-statm>
+Parser:         </Statement>
+Parser:         <Statement>
+Parser:           <assign-statm>
+Parser:             <variable>
+Parser:             </variable>
+Parser:             <expression>
+Parser:               <SimpleExpr>
+Parser:                 <prefix opr>
+Parser:                 </prefix opr>
+Parser:                 <Term>
+Parser:                   <factor>
+Error in line 4: Expected a value but found a -!

@@ -1,0 +1,23 @@
+Binding on line 2: integer was declared as <type decl> on line -1
+Binding on line 3: integer was declared as <type decl> on line -1
+Binding on line 5: i was declared as <VarDecl> on line 2
+Type check := on line 5: type Integer vs type Integer
+Binding on line 5: p was declared as <VarDecl> on line 3
+Type check := on line 5: type Integer vs type Integer
+Binding on line 6: i was declared as <VarDecl> on line 2
+Type check <= operands on line 6: type Integer vs type Integer
+Type check while-test on line 6: type Boolean vs type Boolean
+Binding on line 7: write was declared as <ProcDecl> on line -1
+Binding on line 7: i was declared as <VarDecl> on line 2
+Binding on line 7: p was declared as <VarDecl> on line 3
+Binding on line 7: eol was declared as <const decl> on line -1
+Binding on line 8: i was declared as <VarDecl> on line 2
+Binding on line 8: i was declared as <VarDecl> on line 2
+Type check SimpleExpr-integer-test on line 8: type Integer vs type Integer
+Type check SimpleExpr-integer-test on line 8: type Integer vs type Integer
+Type check := on line 8: type Integer vs type Integer
+Binding on line 8: p was declared as <VarDecl> on line 3
+Binding on line 8: p was declared as <VarDecl> on line 3
+Type check Term-test on line 8: type Integer vs type Integer
+Type check Term-integer-test on line 8: type Integer vs type Integer
+Type check := on line 8: type Integer vs type Integer

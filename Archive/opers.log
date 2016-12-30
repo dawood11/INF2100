@@ -1,0 +1,2095 @@
+   1: program OperatorTest; 
+Parser:   <Program>
+   2:  
+   3:  
+   4: procedure TestUnaryBoolean; 
+Parser:     <block>
+Parser:       <ProcDecl>
+   5:  
+   6: procedure Test (x: boolean); 
+Parser:         <block>
+Parser:           <ProcDecl>
+Parser:             <param decl list>
+Parser:               <param decl>
+Parser:                 <TypeName>
+Parser:                 </TypeName>
+Parser:               </param decl>
+   7: begin 
+Parser:             </param decl list>
+   8: write('n', 'o', 't', ' ', x, ' ', '=', ' ', not x, eol); 
+Parser:             <block>
+Parser:               <StatmList>
+Parser:                 <Statement>
+Parser:                   <ProcCallStatm>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <negation>
+Parser:                               <factor>
+Parser:                                 <variable>
+Parser:                                 </variable>
+Parser:                               </factor>
+Parser:                             </negation>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+   9: end; { Test } 
+Parser:                   </ProcCallStatm>
+Parser:                 </Statement>
+Parser:                 <Statement>
+Parser:                   <empty statm>
+Parser:                   </empty statm>
+Parser:                 </Statement>
+Parser:               </StatmList>
+  10:  
+  11: begin 
+Parser:             </block>
+  12: Test(false);  Test(true); 
+Parser:           </ProcDecl>
+Parser:           <StatmList>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <variable>
+Parser:                         </variable>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <variable>
+Parser:                         </variable>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+  13: end; { TestUnaryBoolean } 
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <empty statm>
+Parser:               </empty statm>
+Parser:             </Statement>
+Parser:           </StatmList>
+  14:  
+  15:  
+  16: procedure TestBinaryBoolean; 
+Parser:         </block>
+Parser:       </ProcDecl>
+Parser:       <ProcDecl>
+  17:  
+  18: procedure Test (x: boolean;  y: boolean); 
+Parser:         <block>
+Parser:           <ProcDecl>
+Parser:             <param decl list>
+Parser:               <param decl>
+Parser:                 <TypeName>
+Parser:                 </TypeName>
+Parser:               </param decl>
+Parser:               <param decl>
+Parser:                 <TypeName>
+Parser:                 </TypeName>
+Parser:               </param decl>
+  19: begin 
+Parser:             </param decl list>
+  20: write(x, ' ', 'a', 'n', 'd', ' ', y, ' ', '=', ' ', x and y, eol); 
+Parser:             <block>
+Parser:               <StatmList>
+Parser:                 <Statement>
+Parser:                   <ProcCallStatm>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                           <factor opr>
+Parser:                           </factor opr>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+  21: write(x, ' ', 'o', 'r', ' ', y, ' ', '=', ' ', x or y, eol); 
+Parser:                   </ProcCallStatm>
+Parser:                 </Statement>
+Parser:                 <Statement>
+Parser:                   <ProcCallStatm>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                         <TermOperator>
+Parser:                         </TermOperator>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+  22: end; { Test } 
+Parser:                   </ProcCallStatm>
+Parser:                 </Statement>
+Parser:                 <Statement>
+Parser:                   <empty statm>
+Parser:                   </empty statm>
+Parser:                 </Statement>
+Parser:               </StatmList>
+  23:  
+  24: begin 
+Parser:             </block>
+  25: Test(false, false);  Test(false, true); 
+Parser:           </ProcDecl>
+Parser:           <StatmList>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <variable>
+Parser:                         </variable>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <variable>
+Parser:                         </variable>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <variable>
+Parser:                         </variable>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <variable>
+Parser:                         </variable>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+  26: Test(true, false);  Test(true, true); 
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <variable>
+Parser:                         </variable>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <variable>
+Parser:                         </variable>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <variable>
+Parser:                         </variable>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <variable>
+Parser:                         </variable>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+  27: end; { TestBinaryBoolean } 
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <empty statm>
+Parser:               </empty statm>
+Parser:             </Statement>
+Parser:           </StatmList>
+  28:  
+  29:  
+  30: procedure TestUnaryNumeric; 
+Parser:         </block>
+Parser:       </ProcDecl>
+Parser:       <ProcDecl>
+  31:  
+  32: procedure Test (x: integer); 
+Parser:         <block>
+Parser:           <ProcDecl>
+Parser:             <param decl list>
+Parser:               <param decl>
+Parser:                 <TypeName>
+Parser:                 </TypeName>
+Parser:               </param decl>
+  33: begin 
+Parser:             </param decl list>
+  34: write('-', ' ', x, ' ', '=', ' ', -x, eol); 
+Parser:             <block>
+Parser:               <StatmList>
+Parser:                 <Statement>
+Parser:                   <ProcCallStatm>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <prefix opr>
+Parser:                         </prefix opr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+  35: write('+', ' ', x, ' ', '=', ' ', +x, eol); 
+Parser:                   </ProcCallStatm>
+Parser:                 </Statement>
+Parser:                 <Statement>
+Parser:                   <ProcCallStatm>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <prefix opr>
+Parser:                         </prefix opr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+  36: end; { Test } 
+Parser:                   </ProcCallStatm>
+Parser:                 </Statement>
+Parser:                 <Statement>
+Parser:                   <empty statm>
+Parser:                   </empty statm>
+Parser:                 </Statement>
+Parser:               </StatmList>
+  37:  
+  38: begin 
+Parser:             </block>
+  39: Test(17);  Test(-11);  Test(0); 
+Parser:           </ProcDecl>
+Parser:           <StatmList>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <prefix opr>
+Parser:                     </prefix opr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+  40: end; { TestUnaryNumeric } 
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <empty statm>
+Parser:               </empty statm>
+Parser:             </Statement>
+Parser:           </StatmList>
+  41:  
+  42:  
+  43: procedure TestBinaryNumeric; 
+Parser:         </block>
+Parser:       </ProcDecl>
+Parser:       <ProcDecl>
+  44:  
+  45: procedure Test (x: integer;  y: integer); 
+Parser:         <block>
+Parser:           <ProcDecl>
+Parser:             <param decl list>
+Parser:               <param decl>
+Parser:                 <TypeName>
+Parser:                 </TypeName>
+Parser:               </param decl>
+Parser:               <param decl>
+Parser:                 <TypeName>
+Parser:                 </TypeName>
+Parser:               </param decl>
+  46: begin 
+Parser:             </param decl list>
+  47: write(x, ' ', '+', ' ', y, ' ', '=', ' ', x + y, eol); 
+Parser:             <block>
+Parser:               <StatmList>
+Parser:                 <Statement>
+Parser:                   <ProcCallStatm>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                         <TermOperator>
+Parser:                         </TermOperator>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+  48: write(x, ' ', '-', ' ', y, ' ', '=', ' ', x - y, eol); 
+Parser:                   </ProcCallStatm>
+Parser:                 </Statement>
+Parser:                 <Statement>
+Parser:                   <ProcCallStatm>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                         <TermOperator>
+Parser:                         </TermOperator>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+  49: write(x, ' ', '*', ' ', y, ' ', '=', ' ', x * y, eol); 
+Parser:                   </ProcCallStatm>
+Parser:                 </Statement>
+Parser:                 <Statement>
+Parser:                   <ProcCallStatm>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <char literal>
+Parser:                               </char literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                           <factor opr>
+Parser:                           </factor opr>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+  50: if y <> 0 then begin 
+Parser:                   </ProcCallStatm>
+Parser:                 </Statement>
+Parser:                 <Statement>
+Parser:                   <if-statm>
+Parser:                     <expression>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <variable>
+Parser:                             </variable>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                       <RelOperator>
+Parser:                       </RelOperator>
+Parser:                       <SimpleExpr>
+Parser:                         <Term>
+Parser:                           <factor>
+Parser:                             <Unsigned Constant>
+Parser:                               <number literal>
+Parser:                               </number literal>
+Parser:                             </Unsigned Constant>
+Parser:                           </factor>
+Parser:                         </Term>
+Parser:                       </SimpleExpr>
+Parser:                     </expression>
+  51: write(x, ' ', 'd', 'i', 'v', ' ', y, ' ', '=', ' ', x div y, eol); 
+Parser:                     <Statement>
+Parser:                       <compound statm>
+Parser:                         <StatmList>
+Parser:                           <Statement>
+Parser:                             <ProcCallStatm>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <variable>
+Parser:                                       </variable>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <variable>
+Parser:                                       </variable>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <variable>
+Parser:                                       </variable>
+Parser:                                     </factor>
+Parser:                                     <factor opr>
+Parser:                                     </factor opr>
+Parser:                                     <factor>
+Parser:                                       <variable>
+Parser:                                       </variable>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <variable>
+Parser:                                       </variable>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+  52: write(x, ' ', 'm', 'o', 'd', ' ', y, ' ', '=', ' ', x mod y, eol); 
+Parser:                             </ProcCallStatm>
+Parser:                           </Statement>
+Parser:                           <Statement>
+Parser:                             <ProcCallStatm>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <variable>
+Parser:                                       </variable>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <variable>
+Parser:                                       </variable>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <Unsigned Constant>
+Parser:                                         <char literal>
+Parser:                                         </char literal>
+Parser:                                       </Unsigned Constant>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <variable>
+Parser:                                       </variable>
+Parser:                                     </factor>
+Parser:                                     <factor opr>
+Parser:                                     </factor opr>
+Parser:                                     <factor>
+Parser:                                       <variable>
+Parser:                                       </variable>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+Parser:                               <expression>
+Parser:                                 <SimpleExpr>
+Parser:                                   <Term>
+Parser:                                     <factor>
+Parser:                                       <variable>
+Parser:                                       </variable>
+Parser:                                     </factor>
+Parser:                                   </Term>
+Parser:                                 </SimpleExpr>
+Parser:                               </expression>
+  53: end 
+Parser:                             </ProcCallStatm>
+Parser:                           </Statement>
+  54: end; { Test } 
+Parser:                           <Statement>
+Parser:                             <empty statm>
+Parser:                             </empty statm>
+Parser:                           </Statement>
+Parser:                         </StatmList>
+Parser:                       </compound statm>
+Parser:                     </Statement>
+Parser:                   </if-statm>
+Parser:                 </Statement>
+Parser:               </StatmList>
+  55:  
+  56: begin 
+Parser:             </block>
+  57: Test(17, 17);  Test(17, -11);  Test(17, 0); 
+Parser:           </ProcDecl>
+Parser:           <StatmList>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <prefix opr>
+Parser:                     </prefix opr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+  58: Test(-11, 17);  Test(-11, -11);  Test(17, 0); 
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <prefix opr>
+Parser:                     </prefix opr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <prefix opr>
+Parser:                     </prefix opr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <prefix opr>
+Parser:                     </prefix opr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+  59: Test(0, 17);  Test(0, -11);  Test(0, 0); 
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <prefix opr>
+Parser:                     </prefix opr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <ProcCallStatm>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <number literal>
+Parser:                           </number literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+  60: end; { TestBinaryNumeric } 
+Parser:               </ProcCallStatm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <empty statm>
+Parser:               </empty statm>
+Parser:             </Statement>
+Parser:           </StatmList>
+  61:  
+  62:  
+  63: begin 
+Parser:         </block>
+  64: TestUnaryBoolean;  TestUnaryNumeric; 
+Parser:       </ProcDecl>
+Parser:       <StatmList>
+Parser:         <Statement>
+Parser:           <ProcCallStatm>
+Parser:           </ProcCallStatm>
+Parser:         </Statement>
+Parser:         <Statement>
+Parser:           <ProcCallStatm>
+  65: TestBinaryBoolean;  TestBinaryNumeric; 
+Parser:           </ProcCallStatm>
+Parser:         </Statement>
+Parser:         <Statement>
+Parser:           <ProcCallStatm>
+Parser:           </ProcCallStatm>
+Parser:         </Statement>
+Parser:         <Statement>
+Parser:           <ProcCallStatm>
+  66: end. 
+Parser:           </ProcCallStatm>
+Parser:         </Statement>
+Parser:         <Statement>
+Parser:           <empty statm>
+Parser:           </empty statm>
+Parser:         </Statement>
+Parser:       </StatmList>
+Parser:     </block>
+Parser:   </Program>
+program operatortest;
+procedure testunaryboolean;
+<<<<<<< HEAD
+procedure test(x : boolean);
+begin
+  write('n', 'o', 't', ' ', x, ' ', '=', ' ', not x, eol)
+  ;
+end;
+
+begin
+  test(false)
+  ;
+  test(true)
+  ;
+end;
+
+procedure testbinaryboolean;
+procedure test(x : boolean;
+y : boolean;
+);
+begin
+  write(x, ' ', 'a', 'n', 'd', ' ', y, ' ', '=', ' ', x and y, eol)
+  ;
+  write(x, ' ', 'o', 'r', ' ', y, ' ', '=', ' ', xory, eol)
+  ;
+end;
+
+begin
+  test(false, false)
+  ;
+  test(false, true)
+  ;
+  test(true, false)
+  ;
+  test(true, true)
+  ;
+end;
+
+procedure testunarynumeric;
+procedure test(x : integer);
+begin
+  write('-', ' ', x, ' ', '=', ' ',  - x, eol)
+  ;
+  write('+', ' ', x, ' ', '=', ' ',  + x, eol)
+  ;
+end;
+
+begin
+  test(17)
+  ;
+  test( - 11)
+  ;
+  test(0)
+  ;
+end;
+
+procedure testbinarynumeric;
+procedure test(x : integer;
+y : integer;
+);
+begin
+  write(x, ' ', '+', ' ', y, ' ', '=', ' ', x+y, eol)
+  ;
+  write(x, ' ', '-', ' ', y, ' ', '=', ' ', x-y, eol)
+  ;
+  write(x, ' ', '*', ' ', y, ' ', '=', ' ', x * y, eol)
+  ;
+  if y <> 0 then 
+    begin
+      write(x, ' ', 'd', 'i', 'v', ' ', y, ' ', '=', ' ', x div y, eol)
+      ;
+      write(x, ' ', 'm', 'o', 'd', ' ', y, ' ', '=', ' ', x mod y, eol)
+      ;
+    endend;
+
+begin
+  test(17, 17)
+  ;
+  test(17,  - 11)
+  ;
+  test(17, 0)
+  ;
+  test( - 11, 17)
+  ;
+  test( - 11,  - 11)
+  ;
+  test(17, 0)
+  ;
+  test(0, 17)
+  ;
+  test(0,  - 11)
+  ;
+  test(0, 0)
+  ;
+end;
+=======
+  procedure test(x : boolean);
+    begin
+      write('n', 'o', 't', ' ', x, ' ', '=', ' ', not x, eol);
+    end;
+  
+  begin
+    test(false);
+    test(true);
+  end;
+
+procedure testbinaryboolean;
+  procedure test(x : boolean; y : boolean);
+    begin
+      write(x, ' ', 'a', 'n', 'd', ' ', y, ' ', '=', ' ', x and y, eol);
+      write(x, ' ', 'o', 'r', ' ', y, ' ', '=', ' ', xory, eol);
+    end;
+  
+  begin
+    test(false, false);
+    test(false, true);
+    test(true, false);
+    test(true, true);
+  end;
+
+procedure testunarynumeric;
+  procedure test(x : integer);
+    begin
+      write('-', ' ', x, ' ', '=', ' ',  - x, eol);
+      write('+', ' ', x, ' ', '=', ' ',  + x, eol);
+    end;
+  
+  begin
+    test(17);
+    test( - 11);
+    test(0);
+  end;
+
+procedure testbinarynumeric;
+  procedure test(x : integer; y : integer);
+    begin
+      write(x, ' ', '+', ' ', y, ' ', '=', ' ', x+y, eol);
+      write(x, ' ', '-', ' ', y, ' ', '=', ' ', x-y, eol);
+      write(x, ' ', '*', ' ', y, ' ', '=', ' ', x * y, eol);
+      if y <> 0 then 
+        begin
+          write(x, ' ', 'd', 'i', 'v', ' ', y, ' ', '=', ' ', x div y, eol);
+          write(x, ' ', 'm', 'o', 'd', ' ', y, ' ', '=', ' ', x mod y, eol);
+        end
+    end;
+  
+  begin
+    test(17, 17);
+    test(17,  - 11);
+    test(17, 0);
+    test( - 11, 17);
+    test( - 11,  - 11);
+    test(17, 0);
+    test(0, 17);
+    test(0,  - 11);
+    test(0, 0);
+  end;
+>>>>>>> 239610e203227eafa815f66badb350f0a3b61c62
+
+begin
+  testunaryboolean;
+  testunarynumeric;
+  testbinaryboolean;
+  testbinarynumeric;
+end.

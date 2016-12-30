@@ -1,0 +1,14 @@
+   1: program DoubleVarPart; 
+Parser:   <Program>
+   2: var a: char; 
+Parser:     <block>
+Parser:       <VarDeclPart>
+Parser:         <VarDecl>
+Parser:           <type>
+Parser:             <TypeName>
+   3: var b: boolean; 
+Parser:             </TypeName>
+Parser:           </type>
+Parser:         </VarDecl>
+Parser:       </VarDeclPart>
+Error in line 3: Expected a begin but found a var!

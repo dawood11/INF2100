@@ -1,0 +1,156 @@
+   1: program TenStars; 
+Parser:   <program>
+   2: const N	=  10; 
+Parser:     <block>
+Parser:       <const decl part>
+Parser:         <const decl>
+Parser:           <constant>
+Parser:             <unsigned constant>
+Parser:               <number literal>
+   3: var i : integer; 
+Parser:               </number literal>
+Parser:             </unsigned constant>
+Parser:           </constant>
+Parser:         </const decl>
+Parser:       </const decl part>
+Parser:       <var decl part>
+Parser:         <var decl>
+Parser:           <type>
+Parser:             <type name>
+   4: begin 
+Parser:             </type name>
+Parser:           </type>
+   5: i := 0; 
+Parser:         </var decl>
+Parser:       </var decl part>
+Parser:       <statm list>
+Parser:         <statement>
+Parser:           <assign statm>
+Parser:             <variable>
+Parser:             </variable>
+Parser:             <expression>
+Parser:               <simple expr>
+Parser:                 <term>
+Parser:                   <factor>
+Parser:                     <unsigned constant>
+Parser:                       <number literal>
+   6: while i < N do begin 
+Parser:                       </number literal>
+Parser:                     </unsigned constant>
+Parser:                   </factor>
+Parser:                 </term>
+Parser:               </simple expr>
+Parser:             </expression>
+Parser:           </assign statm>
+Parser:         </statement>
+Parser:         <statement>
+Parser:           <while-statm>
+Parser:             <expression>
+Parser:               <simple expr>
+Parser:                 <term>
+Parser:                   <factor>
+Parser:                     <variable>
+Parser:                     </variable>
+Parser:                   </factor>
+Parser:                 </term>
+Parser:               </simple expr>
+Parser:               <rel opr>
+Parser:               </rel opr>
+Parser:               <simple expr>
+Parser:                 <term>
+Parser:                   <factor>
+Parser:                     <variable>
+Parser:                     </variable>
+Parser:                   </factor>
+Parser:                 </term>
+Parser:               </simple expr>
+Parser:             </expression>
+   7: write('*');  i := i + 1 
+Parser:             <statement>
+Parser:               <compound statm>
+Parser:                 <statm list>
+Parser:                   <statement>
+Parser:                     <proc call>
+Parser:                       <expression>
+Parser:                         <simple expr>
+Parser:                           <term>
+Parser:                             <factor>
+Parser:                               <unsigned constant>
+Parser:                                 <char literal>
+Parser:                                 </char literal>
+Parser:                               </unsigned constant>
+Parser:                             </factor>
+Parser:                           </term>
+Parser:                         </simple expr>
+Parser:                       </expression>
+Parser:                     </proc call>
+Parser:                   </statement>
+Parser:                   <statement>
+Parser:                     <assign statm>
+Parser:                       <variable>
+Parser:                       </variable>
+Parser:                       <expression>
+Parser:                         <simple expr>
+Parser:                           <term>
+Parser:                             <factor>
+Parser:                               <variable>
+Parser:                               </variable>
+Parser:                             </factor>
+Parser:                           </term>
+Parser:                           <term opr>
+   8: end; 
+Parser:                           </term opr>
+Parser:                           <term>
+Parser:                             <factor>
+Parser:                               <unsigned constant>
+Parser:                                 <number literal>
+Parser:                                 </number literal>
+Parser:                               </unsigned constant>
+Parser:                             </factor>
+Parser:                           </term>
+Parser:                         </simple expr>
+Parser:                       </expression>
+Parser:                     </assign statm>
+Parser:                   </statement>
+Parser:                 </statm list>
+   9: write(eol); 
+Parser:               </compound statm>
+Parser:             </statement>
+Parser:           </while-statm>
+Parser:         </statement>
+Parser:         <statement>
+Parser:           <proc call>
+Parser:             <expression>
+Parser:               <simple expr>
+Parser:                 <term>
+Parser:                   <factor>
+Parser:                     <variable>
+Parser:                     </variable>
+Parser:                   </factor>
+Parser:                 </term>
+Parser:               </simple expr>
+Parser:             </expression>
+  10: end. 
+Parser:           </proc call>
+Parser:         </statement>
+Parser:         <statement>
+Parser:           <empty statm>
+Parser:           </empty statm>
+Parser:         </statement>
+Parser:       </statm list>
+Parser:     </block>
+Parser:   </program>
+program tenstars;
+const n  = 10;
+var i : integer;
+
+begin
+  i := 0;
+  while i < n do
+    begin
+      write('*');
+      i := i+1
+    end;
+  write(eol);
+  
+end.

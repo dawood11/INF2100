@@ -1,0 +1,9 @@
+Binding on line 2: integer was declared as <type decl> on line -1
+Binding on line 5: boolean was declared as <type decl> on line -1
+Binding on line 7: v was declared as <VarDecl> on line 5
+Binding on line 7: x was declared as <VarDecl> on line 2
+Type check = operands on line 7: type Integer vs type Integer
+Type check := on line 7: type Boolean vs type Boolean
+Binding on line 11: p was declared as <ProcDecl> on line 4
+Binding on line 12: write was declared as <ProcDecl> on line -1
+Error at line 12: Unknown id: v

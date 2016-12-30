@@ -1,0 +1,49 @@
+   1: program DoubleVar; 
+Parser:   <Program>
+   2:  
+   3: var a: char; 
+Parser:     <block>
+Parser:       <VarDeclPart>
+Parser:         <VarDecl>
+Parser:           <type>
+Parser:             <TypeName>
+   4:  
+   5: procedure p; 
+Parser:             </TypeName>
+Parser:           </type>
+Parser:         </VarDecl>
+Parser:       </VarDeclPart>
+Parser:       <ProcDecl>
+   6: begin 
+   7: a := 'a'; 
+Parser:         <block>
+Parser:           <StatmList>
+Parser:             <Statement>
+Parser:               <assign-statm>
+Parser:                 <variable>
+Parser:                 </variable>
+Parser:                 <expression>
+Parser:                   <SimpleExpr>
+Parser:                     <Term>
+Parser:                       <factor>
+Parser:                         <Unsigned Constant>
+Parser:                           <char literal>
+   8: end; { p } 
+Parser:                           </char literal>
+Parser:                         </Unsigned Constant>
+Parser:                       </factor>
+Parser:                     </Term>
+Parser:                   </SimpleExpr>
+Parser:                 </expression>
+Parser:               </assign-statm>
+Parser:             </Statement>
+Parser:             <Statement>
+Parser:               <empty statm>
+Parser:               </empty statm>
+Parser:             </Statement>
+Parser:           </StatmList>
+   9:  
+  10: var b: integer; 
+Parser:         </block>
+Parser:       </ProcDecl>
+Error in line 10: Expected a begin but found a var!

@@ -1,0 +1,18 @@
+Binding on line 2: integer was declared as <type decl> on line -1
+Binding on line 4: integer was declared as <type decl> on line -1
+Binding on line 4: integer was declared as <type decl> on line -1
+Binding on line 6: doble was declared as <func decl> on line 4
+Binding on line 6: v was declared as <param decl> on line 4
+Type check Term-test on line 6: type Integer vs type Integer
+Type check Term-integer-test on line 6: type Integer vs type Integer
+Type check := on line 6: type Integer vs type Integer
+Binding on line 6: x was declared as <VarDecl> on line 2
+Binding on line 6: x was declared as <VarDecl> on line 2
+Binding on line 6: v was declared as <param decl> on line 4
+Type check Term-test on line 6: type Integer vs type Integer
+Type check Term-integer-test on line 6: type Integer vs type Integer
+Type check SimpleExpr-integer-test on line 6: type Integer vs type Integer
+Type check SimpleExpr-integer-test on line 6: type Integer vs type Integer
+Type check := on line 6: type Integer vs type Integer
+Binding on line 10: doble was declared as <func decl> on line 4
+Error at line 10: doble is a function, not a procedure.

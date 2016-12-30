@@ -1,0 +1,10 @@
+Binding on line 3: integer was declared as <type decl> on line -1
+Binding on line 3: integer was declared as <type decl> on line -1
+Binding on line 5: a was declared as <param decl> on line 3
+Type check Term-test on line 5: type Integer vs type Integer
+Type check Term-integer-test on line 5: type Integer vs type Integer
+Type check = operands on line 5: type Integer vs type Integer
+Type check if-test on line 5: type Boolean vs type Boolean
+Binding on line 6: f was declared as <func decl> on line 3
+Type check := on line 6: type Integer vs type Char
+Error at line 6: Different types in AssignStatm
